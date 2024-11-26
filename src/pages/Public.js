@@ -1,15 +1,15 @@
 import React, { useContext } from 'react'
 import { ApiContext } from '../context/ApiContext'
-import Termek from '../components/Public/Termek'
 import Vasarloter from '../components/Public/Vasarloter'
+import Kosar from '../components/Public/Kosar'
 
 export default function Public() {
   const {termekLista}=useContext(ApiContext)
     return (
-    <div className=''>
+    <div>
         <main>
             <article>
-                 <Vasarloter termekLista={termekLista} />
+                 <Vasarloter termekLista={termekLista}/>
             </article>
             <aside></aside>
         </main>
