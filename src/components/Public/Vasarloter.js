@@ -7,8 +7,7 @@ export default function Vasarloter(props) {
     <div>
         {
             props.termekLista.map(termek=>{
-                return(<Termek termek={termek} key={termek.id} />,
-                  <TermekA termek={termek} key={termek.id} />
+                return(<Termek termek={termek} key={termek.id} />
                 )
             })
         }
