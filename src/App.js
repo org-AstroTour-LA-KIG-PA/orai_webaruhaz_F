@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Public />
+        <Admin />
       </header>
     </div>
   );

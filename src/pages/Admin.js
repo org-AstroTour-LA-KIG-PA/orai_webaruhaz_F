@@ -1,42 +1,27 @@
 import React from 'react'
+import { useContext } from 'react'
+import { ApiContext } from '../context/ApiContext'
+import Vasarloter from '../components/Public/Vasarloter'
 
 function Admin() {
-  return (
-    <div className='container'> 
-        <div class="card">
-            <div class="card-body">Admin</div>
+    const {termekLista}=useContext(ApiContext)
+    return (
+    <div className=''>
+        <main>
             <table class="table table-striped">
                 <thead >
                     <tr>
-                        <th>ID</th>
-                        <th>Név</th>
-                        <th>Kategória</th>
-                        <th>Leírás</th>
-                        <th>Ár</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><Vasarloter termekLista={termekLista} /></td>
                     </tr>
                 </tbody>
-            </table>  
-        </div>
+            </table>
+            <aside></aside>
+        </main>
     </div>
   )
 }
