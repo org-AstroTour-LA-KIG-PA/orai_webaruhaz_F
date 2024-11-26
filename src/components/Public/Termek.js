@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Termek.css"
 
 export default function Termek(props) {
   return (
