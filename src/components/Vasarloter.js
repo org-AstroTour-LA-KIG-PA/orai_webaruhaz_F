@@ -1,7 +1,7 @@
 import React from 'react'
 import Termek from './Termek'
 
-export default function Vasarloter() {
+export default function Vasarloter(props) {
   return (
     <div>
         {
