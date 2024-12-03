@@ -3,6 +3,7 @@ import "./Termek.css"
 
 export default function Termek(props) {
   return (
+    
     <div className='card'>
         <h4 className='card-title'>{props.termek.nev}</h4>
         <p>{props.termek.leiras}</p>
