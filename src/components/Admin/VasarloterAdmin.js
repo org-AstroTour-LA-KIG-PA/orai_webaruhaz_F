@@ -1,13 +1,12 @@
 import React from 'react'
-import Termek from './Termek'
-
+import TermekA from './TermekA'
 
 export default function Vasarloter(props) {
   return (
     <div>
         {
             props.termekLista.map(termek=>{
-                return(<Termek termek={termek} key={termek.id} />
+                return(<TermekA termek={termek} key={termek.id} />
                 )
             })
         }
