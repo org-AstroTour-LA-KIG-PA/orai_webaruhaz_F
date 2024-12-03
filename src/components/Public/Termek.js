@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Termek.css"
+import Kosar from './Kosar.js'
 
 export default function Termek(props) {
   return (
@@ -11,7 +12,7 @@ export default function Termek(props) {
             <p>{props.termek.leiras}</p>
             <p>{props.termek.kategoria}</p>
             <p>{props.termek.ar} Ft</p>
-            <button>Kosárba</button>
+            
         </div>
     </div>
    

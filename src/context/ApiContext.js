@@ -5,11 +5,12 @@ export const ApiContext=createContext("")
 
 export const ApiProvider=({children})=>{
     const [termekLista, setTermekLista]=useState([])
-    const getAdat= async (vegpont, callbackFv)=> {
+
+    const getAdat= async (vegpont)=> {
         try {
             const response = await myAxios.get(vegpont);
             console.log(response)
-            callbackFv([...response.data])
+            setTermekLista([...response.data])
             }catch (err){
                 console.log("Hiba történt az adatok lekérésekor.")
             }finally{
@@ -19,7 +20,7 @@ export const ApiProvider=({children})=>{
 
 
     useEffect(() => {
-        getAdat("/api/termek", setTermekLista);
+        getAdat("/api/termek");
     }, []);
 
     return (
