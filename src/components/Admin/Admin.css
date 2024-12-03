@@ -1,0 +1,13 @@
+.table{
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.thead{
+    font-size: 30px;
+}
+
+.tbody{
+    font-size: 20px;
+
+}
