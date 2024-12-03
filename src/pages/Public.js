@@ -7,11 +7,15 @@ export default function Public() {
   const {termekLista}=useContext(ApiContext)
     return (
     <div>
-        <main>
-            <article>
-                 <Vasarloter termekLista={termekLista}/>
+        <main className='row'>
+            <article className='col-sm-8'>
+              <h2>Termékek</h2>
+                 <Vasarloter termekLista={termekLista}/>  
             </article>
-            <aside></aside>
+            <aside className='col-sm-4'>
+              <h2>Kosár</h2>
+              <Kosar />
+            </aside>
         </main>
     </div>
   )
