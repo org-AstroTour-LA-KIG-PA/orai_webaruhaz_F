@@ -12,7 +12,6 @@ root.render(
     <ApiProvider>
       <App />
     </ApiProvider>
-    
   </React.StrictMode>
 );
 
