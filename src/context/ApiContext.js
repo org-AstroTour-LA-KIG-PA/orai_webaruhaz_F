@@ -5,7 +5,6 @@ export const ApiContext=createContext("")
 
 export const ApiProvider=({children})=>{
     const [termekLista, setTermekLista]=useState([])
-
     const getAdat= async (vegpont)=> {
         try {
             const response = await myAxios.get(vegpont);

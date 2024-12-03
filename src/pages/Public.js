@@ -12,11 +12,10 @@ export default function Public() {
             <article className='col-sm-8'>
               <h2>Termékek</h2>
                  <Vasarloter termekLista={termekLista}/>
-                 <Kosar kosarLista = {kosarLista}/> 
             </article>
             <aside className='col-sm-4'>
               <h2>Kosár</h2>
-              <Kosar />
+              
             </aside>
         </main>
     </div>
